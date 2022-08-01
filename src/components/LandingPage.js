@@ -5,7 +5,7 @@ import IntroPage from './IntroPage';
 
 const LandingPage = () => {
   return (
-    <div style={{background: 'rgb(244,244,244)'}}>
+    <div style={{background: 'rgb(244,244,244)', position: 'relative'}}>
         <Navbar />
         <IntroPage />
     </div>

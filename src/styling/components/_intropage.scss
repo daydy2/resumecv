@@ -1,10 +1,13 @@
 .mainIntro{
+    padding: 15rem 15rem 0 15rem;
 
     .sectionIntro{
-        margin: 20rem 15rem 10rem 15rem;
+        // margin: 20rem 15rem 10rem 15rem;
+        padding-bottom: 5rem;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        border-bottom: 1px solid white;
 
         .div{
             &__introName{
@@ -64,6 +67,32 @@
             }
 
              
+        }
+    }
+    
+    .sectionAbout{
+        .div{
+            &__aboutMe{
+                padding-top: 5rem;
+            
+                & > h3{
+                    text-transform: uppercase;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 4rem;
+                    line-height: 5.3rem;
+                    font-weight: 600;
+                    background: white;
+                    display: inline-block;
+                    margin: 0 auto;
+                }
+            }
+            &__p-aboutME{
+                width: 70%;
+                margin: 4rem auto;
+                font-size: 2.2rem;
+                text-align: center;
+                font-family: 'Roboto Slab', serif;
+            }   
         }
     }
 }

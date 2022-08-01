@@ -88,6 +88,8 @@ a {
 }
 
 .nav {
+  position: fixed;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,8 +144,12 @@ a {
   color: #255bbb;
 }
 
+.mainIntro {
+  padding: 15rem 15rem 0 15rem;
+}
+
 .mainIntro .sectionIntro {
-  margin: 20rem 15rem 10rem 15rem;
+  padding-bottom: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,6 +159,7 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  border-bottom: 1px solid white;
 }
 
 .mainIntro .sectionIntro .div__introName {
@@ -220,5 +227,28 @@ a {
 .mainIntro .sectionIntro .div__p-contactme > a {
   color: #255bbb;
   font-weight: 400;
+}
+
+.mainIntro .sectionAbout .div__aboutMe {
+  padding-top: 5rem;
+}
+
+.mainIntro .sectionAbout .div__aboutMe > h3 {
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  line-height: 5.3rem;
+  font-weight: 600;
+  background: white;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.mainIntro .sectionAbout .div__p-aboutME {
+  width: 70%;
+  margin: 4rem auto;
+  font-size: 2.2rem;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
 }
 /*# sourceMappingURL=main.css.map */

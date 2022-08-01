@@ -2,6 +2,9 @@ import React from 'react';
 
 
 const IntroPage = () => {
+    const date = new Date();
+    const year = date.getFullYear();
+    const age = year - 1999;
   return (
     <main className="mainIntro">
         <section className="sectionIntro">
@@ -22,8 +25,18 @@ const IntroPage = () => {
         <section className="sectionAbout">
             <div className="div__aboutMe">
                 <h3 className="div__h3-header">About me</h3>
-                <p className="div__p-aboutME">Ige Daniel Olumide is a recent graduate from the department of Electrical 
-                and Electronics Engineering, University of Lagos.</p>
+                <p className="div__p-aboutME">Ige Daniel Olumide is a {age} years old recent graduate 🎓 from the department of Electrical 
+                    and Electronics Engineering, University of Lagos. A qualified frontend developer based in Lagos 💥, with proven experience in developing, creating and maintaining user interfaces. 
+                    Capable of learning with and without supervision and also ready to provide out of box solution to problems. Passionate about learning the
+                    intricacies of web development with the desire to apply such skills on a larger development team. Eager to become better at delivering
+                    more efficient user interface.
+                </p>
+                <p className="div__p-aboutME">
+                    Aside from my job, I like to create and contribute to open source projects. That helps me to learn a ton of new stuff, grow as a developer and support other open source projects. Also I enjoy writing technical things ✍️ at my blog.
+                </p>
+                <p className="div__p-aboutME">
+                In my free time you can find me websurfing 🛹, reading webnovels 📚 , at game console 🎮, at the beach 🏖 or on tech meetups 👩‍💻 and conferences around Lagos.
+                </p>
             </div>
             
         </section>
