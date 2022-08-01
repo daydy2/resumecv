@@ -2,12 +2,12 @@
     padding: 15rem 15rem 0 15rem;
 
     .sectionIntro{
-        // margin: 20rem 15rem 10rem 15rem;
-        padding-bottom: 5rem;
+        // margin: 20rem 15rem 10rem 15rem;        
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        border-bottom: 1px solid white;
+        padding-bottom: 5rem;
+        border-bottom: 1.3px solid white;
 
         .div{
             &__introName{
@@ -71,28 +71,106 @@
     }
     
     .sectionAbout{
+        padding-bottom: 5rem;
+        border-bottom: 1.3px solid white;
+
         .div{
             &__aboutMe{
-                padding-top: 5rem;
-            
-                & > h3{
-                    text-transform: uppercase;
-                    font-family: 'Montserrat', sans-serif;
-                    font-size: 4rem;
-                    line-height: 5.3rem;
-                    font-weight: 600;
-                    background: white;
-                    display: inline-block;
-                    margin: 0 auto;
+                padding-top: 5rem;           
+                
+            }
+            &__aboutFlex{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                &-img{
+                    flex: 4
+                }
+
+                &-p{
+                    flex: 8;
+
+                    & > p{
+                        width: 85%;
+                        margin: 0 auto 2rem auto;
+                        font-size: 2.2rem;
+                        text-align: center;
+                        font-family: 'Roboto Slab', serif;
+                    }
                 }
             }
-            &__p-aboutME{
-                width: 70%;
-                margin: 4rem auto;
-                font-size: 2.2rem;
-                text-align: center;
-                font-family: 'Roboto Slab', serif;
-            }   
+               
         }
     }
 }
+.div__aboutFlex-imgBg{
+    background: $color-deepgray;
+    position: relative;
+    width: 32rem;
+    height: 32rem;
+    border-radius: 1rem;
+
+    .img__me{
+        width: 32rem;
+        height: 32rem;
+        object-fit: cover;
+        border-radius: 1rem;
+        position: absolute;
+        top: -2rem;
+        left: 2rem;
+        z-index: 1;
+    }
+}
+.div__h3-header{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    line-height: 5.3rem;
+    font-weight: 600;
+    background: white;
+    display: block;
+    width: 26rem;
+    margin: 5rem auto;
+    text-align: center;
+    padding: 1rem auto;
+}
+.sectionSkills{
+    .skillsList{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly ;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 0 2rem;
+
+        &Item{
+            padding: 3rem 0;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            &:not(:last-child){
+                margin-left: 1.3rem;
+            }
+            
+            .skillsName{
+                font-size: 2.2rem;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+// .div__skillsFlex{
+//     display: flex;
+//     align-items: flex-start;
+//     justify-content: space-between;
+
+//     &:not(:last-child){
+//         margin-left: 2rem ;
+//     }
+    
