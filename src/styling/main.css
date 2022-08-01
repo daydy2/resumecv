@@ -1,0 +1,224 @@
+@-webkit-keyframes wave-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(14deg);
+            transform: rotate(14deg);
+  }
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  30% {
+    -webkit-transform: rotate(14deg);
+            transform: rotate(14deg);
+  }
+  40% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  /* Reset for the last half to pause */
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes wave-animation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(14deg);
+            transform: rotate(14deg);
+  }
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    -webkit-transform: rotate(-8deg);
+            transform: rotate(-8deg);
+  }
+  30% {
+    -webkit-transform: rotate(14deg);
+            transform: rotate(14deg);
+  }
+  40% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  60% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  /* Reset for the last half to pause */
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  background: #f4f4f4;
+}
+
+.nav__div-name {
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #000000;
+  margin-left: 5rem;
+}
+
+.nav__div-navMenu {
+  margin-right: 5rem;
+}
+
+.nav__div-navMenu .nav__ul-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style: none;
+}
+
+.nav__div-navMenu .nav__ul-list .nav__li-listItem:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.nav__div-navMenu .nav__ul-list .nav__li-listItem {
+  font-size: 1.4rem;
+  font-weight: 600;
+  -webkit-transition: 500ms ease-out;
+  transition: 500ms ease-out;
+}
+
+.nav__div-navMenu .nav__ul-list .nav__li-listItem:hover {
+  cursor: pointer;
+  color: #255bbb;
+}
+
+.mainIntro .sectionIntro {
+  margin: 20rem 15rem 10rem 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.mainIntro .sectionIntro .div__introName {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.7rem;
+  width: 60%;
+}
+
+.mainIntro .sectionIntro .div__h5-intoHello {
+  font-size: 7rem;
+  line-height: 8.4rem;
+  font-weight: 600;
+}
+
+.mainIntro .sectionIntro .div__span-line {
+  font-weight: 700;
+}
+
+.mainIntro .sectionIntro .div__span-shaking {
+  -webkit-animation-name: wave-animation;
+          animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  -webkit-transform-origin: 70% 70%;
+          transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+.mainIntro .sectionIntro .div__span-shaking:hover {
+  cursor: move;
+}
+
+.mainIntro .sectionIntro .div__introDesc {
+  text-align: end;
+  width: 40%;
+  font-family: 'Roboto Slab', serif;
+}
+
+.mainIntro .sectionIntro .div__p-desc {
+  width: 60%;
+  margin-left: 10%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #ababab;
+  display: inline-block;
+}
+
+.mainIntro .sectionIntro .div__p-descSpan {
+  color: #255bbb;
+}
+
+.mainIntro .sectionIntro .div__p-contactme {
+  margin-top: 1rem;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5rem;
+  word-spacing: .1rem;
+}
+
+.mainIntro .sectionIntro .div__p-contactme > a {
+  color: #255bbb;
+  font-weight: 400;
+}
+/*# sourceMappingURL=main.css.map */

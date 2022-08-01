@@ -1,0 +1,69 @@
+.mainIntro{
+
+    .sectionIntro{
+        margin: 20rem 15rem 10rem 15rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .div{
+            &__introName{
+                font-family: 'Playfair Display', serif;
+                font-size: 2.7rem;
+                width: 60%;
+            }
+
+            &__h5-intoHello{
+                font-size: 7rem;
+                line-height: 8.4rem;
+                font-weight: 600;
+            }            
+            &__span-line{
+                font-weight: 700;
+            }
+            &__span-shaking{
+                animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+                animation-duration: 2.5s;        /* Change to speed up or slow down */
+                animation-iteration-count: infinite;  /* Never stop waving :) */
+                transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+                display: inline-block;
+
+                &:hover{
+                    cursor: move;
+                }
+            }
+            &__introDesc{
+                text-align: end;
+                width: 40%;
+                font-family: 'Roboto Slab', serif;               
+            }
+            &__p-desc{
+                width: 60%;
+                margin-left: 10%;
+                font-size: 1.6rem;
+                font-weight: 400;
+                color: $color-text;
+                display: inline-block;
+
+                &Span{
+                    color: $color-link;
+                }
+
+            }
+            &__p-contactme{
+                margin-top: 1rem;
+                font-family: 'Roboto Slab', serif;
+                font-size: 1.5rem;
+                word-spacing: .1rem;
+                
+
+                & > a{
+                    color: $color-link;
+                    font-weight: 400;
+                }
+            }
+
+             
+        }
+    }
+}

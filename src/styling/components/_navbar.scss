@@ -1,0 +1,41 @@
+.nav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    background: $bg-main;
+
+    &__div-name{
+        font-weight: 700;
+        font-size: 2.2rem;
+        color: $color-black;
+        margin-left: 5rem;
+    }
+
+    &__div-navMenu{
+        margin-right: 5rem;
+        .nav__ul-list{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            list-style: none;
+
+            .nav__li-listItem:not(:last-child){
+                margin-right: 2rem;
+            }
+
+            .nav__li-listItem{
+                font-size: 1.4rem;
+                font-weight: 600;
+                transition: 500ms ease-out;
+
+                &:hover{
+                    cursor: pointer;
+                    color: $color-link;
+                }
+            }
+        }
+        
+    }
+}
