@@ -72,6 +72,36 @@
   }
 }
 
+@-webkit-keyframes moveRight {
+  0% {
+    -webkit-transform: translateX(1.5rem);
+            transform: translateX(1.5rem);
+  }
+  60% {
+    -webkit-transform: translateX(1rem);
+            transform: translateX(1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    -webkit-transform: translateX(1.5rem);
+            transform: translateX(1.5rem);
+  }
+  60% {
+    -webkit-transform: translateX(1rem);
+            transform: translateX(1rem);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -266,9 +296,7 @@ a {
 .mainIntro .sectionAbout .div__aboutFlex-p > p {
   width: 85%;
   margin: 0 auto 2rem auto;
-  font-size: 2.2rem;
   text-align: center;
-  font-family: 'Roboto Slab', serif;
 }
 
 .div__aboutFlex-imgBg {
@@ -305,6 +333,11 @@ a {
   padding: 1rem auto;
 }
 
+.sectionSkills {
+  padding-bottom: 5rem;
+  border-bottom: 1.3px solid white;
+}
+
 .sectionSkills .skillsList {
   list-style: none;
   display: -webkit-box;
@@ -330,6 +363,9 @@ a {
   padding: 3rem 0;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .sectionSkills .skillsListItem:not(:last-child) {
@@ -339,6 +375,135 @@ a {
 .sectionSkills .skillsListItem .skillsName {
   font-size: 2.2rem;
   display: block;
+  text-align: center;
+}
+
+.sectionWorks {
+  padding-bottom: 5rem;
+}
+
+.sectionWorks .workList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  list-style: none;
+}
+
+.sectionWorks .workList .workListItem {
+  width: 40rem;
+  height: 50rem;
+}
+
+.sectionWorks .workList .workListItem .workImg {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: top;
+     object-position: top;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.sectionWorks .workList .workListItem .workImg:hover {
+  -webkit-transform: translateY(-1.5rem) scale(1.03);
+          transform: translateY(-1.5rem) scale(1.03);
+}
+
+.sectionWorks .workList .workListItem:not(:last-child) {
+  margin-left: 2.2rem;
+}
+
+.sectionWorks .workList .workListItem .workListSummary {
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: #292929;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem 15rem;
+}
+
+footer .div__footerEmail {
+  font-family: 'Playfair Display', serif;
+}
+
+footer .div__h4-heading {
+  font-size: 2.8rem;
+  line-height: 2.4rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+footer .div__p-footerMail {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  margin-top: .85rem;
+}
+
+footer .div__p-cw {
+  font-size: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+footer .footerLink {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .footerLinkItem:hover {
+  cursor: pointer;
+}
+
+footer .footerLinkItem:not(:first-child) {
+  margin-left: 2rem;
+}
+
+footer .footerLinkItem > a {
+  text-decoration: underline;
+}
+
+.linked {
+  font-size: 1.9rem;
   text-align: center;
 }
 
@@ -368,5 +533,29 @@ a {
 
 .icons-boots {
   color: #7010ef;
+}
+
+.icons-linkedIn {
+  color: #0a63bc;
+}
+
+.icons-github {
+  color: white;
+}
+
+.p-common {
+  font-size: 2.2rem;
+  font-family: 'Roboto Slab', serif;
+}
+
+.fa-arrow-right-long {
+  padding: 0 .5rem;
+}
+
+.fa-arrow-right-long:hover {
+  cursor: pointer;
+  display: inline-block;
+  -webkit-animation: moveRight .8s ease-in-out;
+          animation: moveRight .8s ease-in-out;
 }
 /*# sourceMappingURL=main.css.map */

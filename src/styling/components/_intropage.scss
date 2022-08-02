@@ -94,9 +94,7 @@
                     & > p{
                         width: 85%;
                         margin: 0 auto 2rem auto;
-                        font-size: 2.2rem;
                         text-align: center;
-                        font-family: 'Roboto Slab', serif;
                     }
                 }
             }
@@ -136,6 +134,9 @@
     padding: 1rem auto;
 }
 .sectionSkills{
+    padding-bottom: 5rem;
+    border-bottom: 1.3px solid white;
+
     .skillsList{
         list-style: none;
         display: flex;
@@ -150,6 +151,9 @@
             padding: 3rem 0;
             margin-top: 2rem;
             margin-bottom: 2rem;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-weight: 500;
 
             &:not(:last-child){
                 margin-left: 1.3rem;
@@ -162,15 +166,99 @@
             }
         }
     }
-
 }
-
-// .div__skillsFlex{
-//     display: flex;
-//     align-items: flex-start;
-//     justify-content: space-between;
-
-//     &:not(:last-child){
-//         margin-left: 2rem ;
-//     }
+.sectionWorks{
+    padding-bottom: 5rem;
     
+
+    .workList{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        list-style: none;
+
+        .workListItem{
+            width: 40rem;
+            height: 50rem;
+            
+
+            .workImg{ 
+                width: 100%;                 
+                height:80%;
+                object-fit: contain;
+                object-position: top;
+                border-radius: 3px;
+                box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+                transition: transform 0.3s;
+
+                &:hover{
+                    transform: translateY(-1.5rem) scale(1.03);
+                }
+            }
+
+            &:not(:last-child){
+                margin-left: 2.2rem;
+            }
+            .workListSummary{
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+footer{
+    background-color: $color-bgFooter;
+    color: $color-white;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5rem 15rem;
+
+    .div{
+        &__footerEmail{
+            font-family: 'Playfair Display', serif;
+        }
+        &__h4-heading{
+            font-size: 2.8rem;
+            line-height: 2.4rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        &__p-footerMail{
+            font-family: 'Roboto Slab', serif;
+            font-size: 1.2rem;
+            margin-top: .85rem;
+        }
+        &__p-cw{
+            font-size: 1.5rem;
+            margin-top: 3.5rem;
+        }
+    }
+
+    .footerLink{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &Item{
+
+            &:hover{
+                cursor: pointer;
+            }
+            &:not(:first-child){
+                margin-left: 2rem;
+            }
+
+            & > a{
+                text-decoration: underline;
+
+            }
+        }
+    }
+}
+.linked{
+    font-size: 1.9rem;
+    text-align: center;
+}
