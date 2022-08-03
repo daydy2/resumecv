@@ -63,32 +63,40 @@ const IntroPage = () => {
                     <li className="skillsListItem">
                         <AiOutlineHtml5 size={98} className='icons-html'/>
                         <span className='icons-html skillsName'>html</span>
+                        <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                     <li className="skillsListItem">
                         <TbBrandCss3 size={98} className='icons-css'/>
                         <span className = 'icons-css skillsName'>css</span>
+                        <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                     <li className="skillsListItem">
                         <TbBrandJavascript size={98} className='icons-jvs'/>
                         <span className = 'icons-jvs skillsName'>javascript</span>
+                        <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                     <li className="skillsListItem">
                         <FaSass size={98} className='icons-sass'/>
                         <span className = 'icons-sass skillsName'>sass/scss</span>
+                        <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                     <li className="skillsListItem">
                         <FaReact size={98} className='icons-react'/>
                         <span className = 'icons-react skillsName'>react</span>
+                        <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                     <li className="skillsListItem">
                         <TbBrandNextjs size={98}className='icons-nextjs'/>
                         <span className = 'icons-nextjs skillsName'>nextjs</span>
+                        <progress id="percent-loaded" value="60" max="100">60 %</progress>
                     </li>
                     <li className="skillsListItem">
                         <TbBrandBootstrap size={98} className='icons-boots' />
                         <span className = 'icons-boots skillsName'>bootstrap</span>
+                        <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                 </ul>
+                
             </section>
             <section className="sectionWorks">
                 <h3 className="div__h3-header">my works</h3>
