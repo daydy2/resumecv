@@ -22,6 +22,8 @@
     }
     &-linkedIn{
         color: rgb(10,99,188);
+        size: 70;
+        
     }
     &-github{
         color: white;
@@ -30,6 +32,23 @@
 .p-common{    
     font-size: 2.2rem;    
     font-family: 'Roboto Slab', serif;
+
+    @media screen and (max-width: 1000px) and (min-width: 850px){
+        font-size: 1.7rem; 
+    }
+    @media screen and (max-width: 849px) and (min-width: 700px){
+        font-size: 1.5rem; 
+    }
+    @media screen and (max-width: 699px) and (min-width: 550px) {
+        font-size: 1.5rem;
+    }
+    @media screen and (max-width: 549px) and (min-width: 400px) {
+        font-size: 1.5rem;
+    }           
+}
+.p-overflow{
+    height: 18rem;
+    overflow: scroll;
 }
 .fa{
     &-arrow-right-long{
@@ -40,6 +59,23 @@
             cursor: pointer;
             display: inline-block;
             animation: moveRight .8s ease-in-out;
+        }
+    }
+}
+.linked{
+    @media screen and (max-width: 849px) and (min-width: 700px) {
+        &{
+            font-size: 1.3rem; 
+        }
+    }
+    @media screen and (max-width: 699px) and (min-width: 550px) {
+        &{
+            font-size: 1.2rem;  
+        }
+    }
+    @media screen and (max-width: 549px) and (min-width: 400px) {
+        &{
+            font-size: 1.2rem; 
         }
     }
 }

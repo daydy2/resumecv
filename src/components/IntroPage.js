@@ -1,6 +1,6 @@
 import React from 'react';
 import Meboy from '../images/meboy.jpg';
-import Shoppy from '../images/shoppy1.jpg'
+import Shoppy from '../images/download.png'
 import {AiOutlineHtml5, AiOutlineLinkedin} from 'react-icons/ai';
 import {TbBrandCss3, TbBrandJavascript, TbBrandNextjs, TbBrandBootstrap} from 'react-icons/tb';
 import {GrGithub} from 'react-icons/gr';
@@ -16,7 +16,7 @@ const IntroPage = () => {
         <main className="mainIntro">
             <section className="sectionIntro">
                 <div className="div__introName">
-                    <h5 className="div__h5-intoHello">Hi, I'm Daniel! <span className="div__span-shaking">👋</span></h5>
+                    <h1 className="div__h5-intoHello">Hi, <span className="div__h5-intoHelloDan">I'm Daniel! <span className="div__span-shaking">👋</span></span> </h1>
                     <h3 className="div__h3-intoJob">A Frontend Developer<span className="div__span-line">|</span></h3>
                     
                 </div>
@@ -31,7 +31,7 @@ const IntroPage = () => {
             </section>
             <section className="sectionAbout">
                 <div className="div__aboutMe">
-                    <h3 className="div__h3-header">About me</h3>
+                    <h2 className="div__h3-header">About me</h2>
                     <div className="div__aboutFlex">
                         <div className="div__aboutFlex-img">
                             <div className="div__aboutFlex-imgBg">
@@ -40,7 +40,7 @@ const IntroPage = () => {
                             
                         </div>
                         <div className="div__aboutFlex-p">
-                            <p className="p-common">Ige Daniel Olumide is a {age} years old recent graduate 🎓 from the department of Electrical 
+                            <p className="p-common p-overflow">Ige Daniel Olumide is a {age} years old recent graduate 🎓 from the department of Electrical 
                                 and Electronics Engineering, University of Lagos. A qualified frontend developer based in Lagos 💥, with proven experience in developing, creating and maintaining user interfaces. 
                                 Capable of learning with and without supervision and also ready to provide out of box solution to problems. Passionate about learning the
                                 intricacies of web development with the desire to apply such skills on a larger development team. Eager to become better at delivering
@@ -58,40 +58,40 @@ const IntroPage = () => {
                 
             </section>
             <section className="sectionSkills">
-                <h3 className="div__h3-header">My skills</h3>
+                <h2 className="div__h3-header">My skills</h2>
                 <ul className="skillsList">
                     <li className="skillsListItem">
-                        <AiOutlineHtml5 size={98} className='icons-html'/>
+                        <AiOutlineHtml5 size={84} className='icons-html'/>
                         <span className='icons-html skillsName'>html</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                     <li className="skillsListItem">
-                        <TbBrandCss3 size={98} className='icons-css'/>
+                        <TbBrandCss3 size={84} className='icons-css'/>
                         <span className = 'icons-css skillsName'>css</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                     <li className="skillsListItem">
-                        <TbBrandJavascript size={98} className='icons-jvs'/>
+                        <TbBrandJavascript size={84} className='icons-jvs'/>
                         <span className = 'icons-jvs skillsName'>javascript</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                     <li className="skillsListItem">
-                        <FaSass size={98} className='icons-sass'/>
+                        <FaSass size={84} className='icons-sass'/>
                         <span className = 'icons-sass skillsName'>sass/scss</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                     <li className="skillsListItem">
-                        <FaReact size={98} className='icons-react'/>
+                        <FaReact size={84} className='icons-react'/>
                         <span className = 'icons-react skillsName'>react</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                     <li className="skillsListItem">
-                        <TbBrandNextjs size={98}className='icons-nextjs'/>
+                        <TbBrandNextjs size={84}className='icons-nextjs'/>
                         <span className = 'icons-nextjs skillsName'>nextjs</span>
                         <progress id="percent-loaded" value="60" max="100">60 %</progress>
                     </li>
                     <li className="skillsListItem">
-                        <TbBrandBootstrap size={98} className='icons-boots' />
+                        <TbBrandBootstrap size={84} className='icons-boots' />
                         <span className = 'icons-boots skillsName'>bootstrap</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
@@ -99,16 +99,33 @@ const IntroPage = () => {
                 
             </section>
             <section className="sectionWorks">
-                <h3 className="div__h3-header">my works</h3>
+                <h2 className="div__h3-header">my works</h2>
                 <ul className="workList">
-                    <li className="workListItem">
-                        <a href="https://shopfries.herokuapp.com" target='_blank'><img src={Shoppy} alt="shopipy clone web app" className="workImg img-fluid" /></a>
-                        <p className="p-common workListSummary"> A landing page clone of Shopify ecommerce website <i class="fa-solid fa-arrow-right-long"></i></p>
-                    </li>
+                    {/* <div className="workListFlex"> */}
+                        <li className="workListItem">
+                            <a href="https://shopfries.herokuapp.com" target='_blank'><img src={Shoppy} alt="shopipy clone web app" className="workImg img-fluid" /></a>
+                            <p className="p-common workListSummary"> A landing page clone of Shopify ecommerce website <i class="fa-solid fa-arrow-right-long"></i></p>
+                        </li>
+                        <li className="workListItem">
+                            <a href="https://shopfries.herokuapp.com" target='_blank'><img src={Shoppy} alt="shopipy clone web app" className="workImg img-fluid" /></a>
+                            <p className="p-common workListSummary"> A landing page clone of Shopify ecommerce website <i class="fa-solid fa-arrow-right-long"></i></p>
+                        </li>
+                    {/* </div>
+                    <div className="workListFlex"> */}
+                        <li className="workListItem">
+                            <a href="https://shopfries.herokuapp.com" target='_blank'><img src={Shoppy} alt="shopipy clone web app" className="workImg img-fluid" /></a>
+                            <p className="p-common workListSummary"> A landing page clone of Shopify ecommerce website <i class="fa-solid fa-arrow-right-long"></i></p>
+                        </li>
+                        <li className="workListItem">
+                            <a href="https://shopfries.herokuapp.com" target='_blank'><img src={Shoppy} alt="shopipy clone web app" className="workImg img-fluid" /></a>
+                            <p className="p-common workListSummary"> A landing page clone of Shopify ecommerce website <i class="fa-solid fa-arrow-right-long"></i></p>
+                        </li>
+                    {/* </div> */}
+                    
+                    
                     
                 </ul>
-            </section>      
-            
+            </section>
         </main>
         <footer className="footer">
         <div className="div__footerEmail">
@@ -120,13 +137,13 @@ const IntroPage = () => {
         <ul className="footerLink">
             <li className="footerLinkItem">
                 <a href="https://www.linkedin.com/in/daniel-ige-47433422a/" target='_blank' className="anc">
-                   <AiOutlineLinkedin size={70} className='icons-linkedIn'/>
+                   <AiOutlineLinkedin size={56} className='icons-linkedIn'/>
                    <p className="linked">LinkedIn</p>
                 </a>
             </li>
             <li className="footerLinkItem">
                 <a href="https://github.com/daydy2" target='_blank' className="anc">
-                    <GrGithub size={70} className='icons-github'/>
+                    <GrGithub size={56} className='icons-github'/>
                     <p className="linked">Github</p>
                 </a>
             </li>
