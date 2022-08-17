@@ -11,6 +11,10 @@ const IntroPage = () => {
     const date = new Date();
     const year = date.getFullYear();
     const age = year - 1999;
+
+    
+        // const {innerHeight, innerWidth} = window
+        // console.log(innerHeight, innerWidth)
   return (
     <div>
         <main className="mainIntro">
@@ -33,13 +37,13 @@ const IntroPage = () => {
                 <div className="div__aboutMe">
                     <h2 className="div__h3-header">About me</h2>
                     <div className="div__aboutFlex">
-                        <div className="div__aboutFlex-img">
+                        {/* <div className="div__aboutFlex-img"> */}
                             <div className="div__aboutFlex-imgBg">
                                 <img src={Meboy} alt="Ige Daniel" className='img__me img-fluid' />
                             </div>                       
                             
-                        </div>
-                        <div className="div__aboutFlex-p">
+                        {/* </div> */}
+                        {/* <div className="div__aboutFlex-p"> */}
                             <p className="p-common p-overflow">Ige Daniel Olumide is a {age} years old recent graduate 🎓 from the department of Electrical 
                                 and Electronics Engineering, University of Lagos. A qualified frontend developer based in Lagos 💥, with proven experience in developing, creating and maintaining user interfaces. 
                                 Capable of learning with and without supervision and also ready to provide out of box solution to problems. Passionate about learning the
@@ -52,7 +56,7 @@ const IntroPage = () => {
                             <p className="p-common">
                             In my free time you can find me websurfing 🛹, reading webnovels 📚 , at game console 🎮, at the beach 🏖 or on tech meetups 👩‍💻 and conferences around Lagos.
                             </p>
-                        </div>
+                        {/* </div> */}
                     </div>
                 </div>
                 
@@ -61,32 +65,32 @@ const IntroPage = () => {
                 <h2 className="div__h3-header">My skills</h2>
                 <ul className="skillsList">
                     <li className="skillsListItem">
-                        <AiOutlineHtml5 size={84} className='icons-html'/>
+                        <AiOutlineHtml5 size={84 } className='icons-html'/>
                         <span className='icons-html skillsName'>html</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                     <li className="skillsListItem">
-                        <TbBrandCss3 size={84} className='icons-css'/>
+                        <TbBrandCss3 size={84 } className='icons-css'/>
                         <span className = 'icons-css skillsName'>css</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                     <li className="skillsListItem">
-                        <TbBrandJavascript size={84} className='icons-jvs'/>
+                        <TbBrandJavascript size={84 } className='icons-jvs'/>
                         <span className = 'icons-jvs skillsName'>javascript</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                     <li className="skillsListItem">
-                        <FaSass size={84} className='icons-sass'/>
+                        <FaSass size={84 } className='icons-sass'/>
                         <span className = 'icons-sass skillsName'>sass/scss</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                     <li className="skillsListItem">
-                        <FaReact size={84} className='icons-react'/>
+                        <FaReact size={84 } className='icons-react'/>
                         <span className = 'icons-react skillsName'>react</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
                     <li className="skillsListItem">
-                        <TbBrandNextjs size={84}className='icons-nextjs'/>
+                        <TbBrandNextjs size={84 }className='icons-nextjs'/>
                         <span className = 'icons-nextjs skillsName'>nextjs</span>
                         <progress id="percent-loaded" value="60" max="100">60 %</progress>
                     </li>
@@ -107,8 +111,8 @@ const IntroPage = () => {
                             <p className="p-common workListSummary"> A landing page clone of Shopify ecommerce website <i class="fa-solid fa-arrow-right-long"></i></p>
                         </li>
                         <li className="workListItem">
-                            <a href="https://shopfries.herokuapp.com" target='_blank'><img src={Shoppy} alt="shopipy clone web app" className="workImg img-fluid" /></a>
-                            <p className="p-common workListSummary"> A landing page clone of Shopify ecommerce website <i class="fa-solid fa-arrow-right-long"></i></p>
+                            <a href="https://iptrackr.herokuapp.com/" target='_blank'><img src='https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/p6khgutnfr78zbs9kje7.jpg' alt="ip tracker website" className="workImg img-fluid" /></a>
+                            <p className="p-common workListSummary"> A simple api website to track ip address <i class="fa-solid fa-arrow-right-long"></i></p>
                         </li>
                     {/* </div>
                     <div className="workListFlex"> */}

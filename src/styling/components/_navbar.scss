@@ -11,35 +11,75 @@
     font-family: 'Montserrat', sans-serif;
     background: $bg-main;
 
+    @media screen and (max-width: 450px) and (min-width: 300px) {
+        &{
+        width: 100vw;
+           flex-wrap: nowrap;
+           padding: 2rem 0 2rem 2rem; 
+        }        
+    }
+
     &__div-name{
         font-weight: 700;
         font-size: 2.2rem;
         color: $color-black;
         margin-left: 5rem;
+
+        @media screen and (max-width: 450px) and (min-width: 300px) {
+            &{
+                font-size: 1.8rem;
+                margin-left: 2rem; 
+            }        
+        }
     }
 
     &__div-navMenu{
         margin-right: 5rem;
+
+        @media screen and (max-width: 450px) and (min-width: 300px) {
+            &{
+                margin-right: 3rem;
+                
+            }
+        }
         .nav__ul-list{
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
             list-style: none;
 
+            // @media screen and (max-width: 549px) and (min-width: 400px) {
+            //     &{
+            //         margin-left: 3rem;
+                    
+            //     }
+            // }
+
+            
+
             .nav__li-listItem:not(:last-child){
                 margin-right: 2rem;
             }
 
             .nav__li-listItem{
-                font-size: 1.4rem;
+                font-size: 1.6rem;
                 font-weight: 600;
+                margin-top: .7rem;
                 transition: 500ms ease-out;
 
                 &:hover{
                     cursor: pointer;
                     color: $color-link;
                 }
+                @media screen and (max-width: 450px) and (min-width: 300px) {
+                    &{
+                        font-size: 1.2rem;
+                        margin-top: .5rem;   
+                    }        
+                }
             }
+
+            
         }
         
     }
