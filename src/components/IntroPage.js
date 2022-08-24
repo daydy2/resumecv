@@ -63,7 +63,7 @@ const IntroPage = () => {
                         {/* </div> */}
                     </div>
                 </div>
-                <a href='https://drive.google.com/file/d/1jxl5ICcsdv09oVzFnpxvhblZpt80QIE4/view?usp=sharing' target='_blank' className='downloadrsm btn'> <i class="fa-solid fa-download"></i> Download resume</a>
+                <a href='https://drive.google.com/file/d/1jxl5ICcsdv09oVzFnpxvhblZpt80QIE4/view?usp=sharing' target='_blank' rel="noreferrer" className='downloadrsm btn'> <i class="fa-solid fa-download"></i> Download resume</a>
                 
             </section>
             <section className="sectionSkills" >
@@ -120,22 +120,22 @@ const IntroPage = () => {
                     
                         <li className="workListItem" data-aos="fade-left"
                         data-aos-duration="1500">
-                            <a href="https://shopfries.herokuapp.com" target='_blank'><img src={Shoppy} alt="shopipy clone web app" className="workImg img-fluid" /></a>
+                            <a href="https://shopfries.herokuapp.com" target='_blank' rel="noreferrer"><img src={Shoppy} alt="shopipy clone web app" className="workImg img-fluid" /></a>
                             <p className="p-common workListSummary"> A landing page clone of Shopify ecommerce website <i class="fa-solid fa-arrow-right-long"></i></p>
                         </li>
                         <li className="workListItem" data-aos="fade-left"
                         data-aos-duration="1600">
-                            <a href="https://iptrackr.herokuapp.com/" target='_blank'><img src='https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/p6khgutnfr78zbs9kje7.jpg' alt="ip tracker website" className="workImg img-fluid" /></a>
+                            <a href="https://iptrackr.herokuapp.com/" target='_blank' rel="noreferrer"><img src='https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/p6khgutnfr78zbs9kje7.jpg' alt="ip tracker website" className="workImg img-fluid" /></a>
                             <p className="p-common workListSummary"> A simple api website to track ip address <i class="fa-solid fa-arrow-right-long"></i></p>
                         </li>
                     
                         <li className="workListItem" data-aos="fade-left"
                         data-aos-duration="1700">
-                            <a href="https://movie-streaming-app-f4013.web.app/" target='_blank'><img src='https://mir-s3-cdn-cf.behance.net/projects/404/b9847a149683171.Y3JvcCwxMDM5LDgxMywxOTgsMA.png' alt="shopipy clone web app" className="workImg img-fluid" /></a>
+                            <a href="https://movie-streaming-app-f4013.web.app/" target='_blank' rel="noreferrer"><img src='https://mir-s3-cdn-cf.behance.net/projects/404/b9847a149683171.Y3JvcCwxMDM5LDgxMywxOTgsMA.png' alt="shopipy clone web app" className="workImg img-fluid" /></a>
                             <p className="p-common workListSummary"> A movie web app designed for streaming and downloads<i class="fa-solid fa-arrow-right-long"></i></p>
                         </li>
                         {/* <li className="workListItem">
-                            <a href="https://shopfries.herokuapp.com" target='_blank'><img src={Shoppy} alt="shopipy clone web app" className="workImg img-fluid" /></a>
+                            <a href="https://shopfries.herokuapp.com" target='_blank' rel="noreferrer"><img src={Shoppy} alt="shopipy clone web app" className="workImg img-fluid" /></a>
                             <p className="p-common workListSummary"> A landing page clone of Shopify ecommerce website <i class="fa-solid fa-arrow-right-long"></i></p>
                         </li> */}
                     
@@ -154,13 +154,13 @@ const IntroPage = () => {
         </div>
         <ul className="footerLink">
             <li className="footerLinkItem">
-                <a href="https://www.linkedin.com/in/daniel-ige-47433422a/" target='_blank' className="anc">
+                <a href="https://www.linkedin.com/in/daniel-ige-47433422a/" target='_blank' rel="noreferrer" className="anc">
                    <AiOutlineLinkedin size={56} className='icons-linkedIn'/>
                    <p className="linked">LinkedIn</p>
                 </a>
             </li>
             <li className="footerLinkItem">
-                <a href="https://github.com/daydy2" target='_blank' className="anc">
+                <a href="https://github.com/daydy2" target='_blank' rel="noreferrer" className="anc">
                     <GrGithub size={56} className='icons-github'/>
                     <p className="linked">Github</p>
                 </a>
