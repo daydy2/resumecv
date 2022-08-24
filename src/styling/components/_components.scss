@@ -82,3 +82,39 @@
         }
     }
 }
+.downloadrsm{
+    background: $color-header !important;
+    color: $color-text !important;
+    padding: 2rem;
+    
+    text-transform: uppercase;
+    border-style: none;
+    border-radius: 1rem;
+    margin: 1rem auto;
+}
+
+.btn{
+    &:link,
+    &:visited{
+        font-family: inherit;
+        font-size: 1.4rem;
+        display: inline-block;
+        text-decoration: none;
+        transition: all .2s;
+
+    }
+
+    &:hover{
+        background: $bg-main !important;
+        color: $color-black !important;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+
+    }
+
+    &:active{
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+
+    }
+}

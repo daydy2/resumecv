@@ -713,10 +713,10 @@ a {
 }
 
 .sectionWorks .workList .workListItem .workImg {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 30rem;
+  height: 21rem;
+  -o-object-fit: cover;
+     object-fit: cover;
   -o-object-position: top;
      object-position: top;
   border-radius: 3px;
@@ -1004,5 +1004,40 @@ footer .footerLinkItem > a {
   .linked {
     font-size: 1.2rem;
   }
+}
+
+.downloadrsm {
+  background: #2e2e2e !important;
+  color: #ababab !important;
+  padding: 2rem;
+  text-transform: uppercase;
+  border-style: none;
+  border-radius: 1rem;
+  margin: 1rem auto;
+}
+
+.btn:link, .btn:visited {
+  font-family: inherit;
+  font-size: 1.4rem;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn:hover {
+  background: #f4f4f4 !important;
+  color: #000000 !important;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.btn:active {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 /*# sourceMappingURL=main.css.map */

@@ -5,6 +5,10 @@ import {AiOutlineHtml5, AiOutlineLinkedin} from 'react-icons/ai';
 import {TbBrandCss3, TbBrandJavascript, TbBrandNextjs, TbBrandBootstrap} from 'react-icons/tb';
 import {GrGithub} from 'react-icons/gr';
 import {FaSass, FaReact} from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
 
 const IntroPage = () => {
@@ -33,8 +37,8 @@ const IntroPage = () => {
                     </p>
                 </div>
             </section>
-            <section className="sectionAbout">
-                <div className="div__aboutMe">
+            <section className="sectionAbout" >
+                <div className="div__aboutMe" data-aos="fade-up">
                     <h2 className="div__h3-header">About me</h2>
                     <div className="div__aboutFlex">
                         {/* <div className="div__aboutFlex-img"> */}
@@ -59,42 +63,50 @@ const IntroPage = () => {
                         {/* </div> */}
                     </div>
                 </div>
+                <a href='https://drive.google.com/file/d/1jxl5ICcsdv09oVzFnpxvhblZpt80QIE4/view?usp=sharing' target='_blank' className='downloadrsm btn'> <i class="fa-solid fa-download"></i> Download resume</a>
                 
             </section>
-            <section className="sectionSkills">
-                <h2 className="div__h3-header">My skills</h2>
+            <section className="sectionSkills" >
+                <h2 className="div__h3-header" data-aos="fade-up">My skills</h2>
                 <ul className="skillsList">
-                    <li className="skillsListItem">
+                    <li className="skillsListItem" data-aos="fade-left"
+                        data-aos-duration="500">
                         <AiOutlineHtml5 size={84 } className='icons-html'/>
                         <span className='icons-html skillsName'>html</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
-                    <li className="skillsListItem">
+                    <li className="skillsListItem" data-aos="fade-left"
+                        data-aos-duration="600">
                         <TbBrandCss3 size={84 } className='icons-css'/>
                         <span className = 'icons-css skillsName'>css</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
-                    <li className="skillsListItem">
+                    <li className="skillsListItem" data-aos="fade-left"
+                        data-aos-duration="700">
                         <TbBrandJavascript size={84 } className='icons-jvs'/>
                         <span className = 'icons-jvs skillsName'>javascript</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
-                    <li className="skillsListItem">
+                    <li className="skillsListItem" data-aos="fade-left"
+                        data-aos-duration="800">
                         <FaSass size={84 } className='icons-sass'/>
                         <span className = 'icons-sass skillsName'>sass/scss</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
-                    <li className="skillsListItem">
+                    <li className="skillsListItem" data-aos="fade-left"
+                        data-aos-duration="900">
                         <FaReact size={84 } className='icons-react'/>
                         <span className = 'icons-react skillsName'>react</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
                     </li>
-                    <li className="skillsListItem">
+                    <li className="skillsListItem" data-aos="fade-left"
+                        data-aos-duration="1000">
                         <TbBrandNextjs size={84 }className='icons-nextjs'/>
                         <span className = 'icons-nextjs skillsName'>nextjs</span>
                         <progress id="percent-loaded" value="60" max="100">60 %</progress>
                     </li>
-                    <li className="skillsListItem">
+                    <li className="skillsListItem" data-aos="fade-left"
+                        data-aos-duration="1100">
                         <TbBrandBootstrap size={84} className='icons-boots' />
                         <span className = 'icons-boots skillsName'>bootstrap</span>
                         <progress id="percent-loaded" value="100" max="100">100 %</progress>
@@ -102,29 +114,31 @@ const IntroPage = () => {
                 </ul>
                 
             </section>
-            <section className="sectionWorks">
-                <h2 className="div__h3-header">my works</h2>
+            <section className="sectionWorks" >
+                <h2 className="div__h3-header" data-aos="fade-up" >my works</h2>
                 <ul className="workList">
-                    {/* <div className="workListFlex"> */}
-                        <li className="workListItem">
+                    
+                        <li className="workListItem" data-aos="fade-left"
+                        data-aos-duration="1500">
                             <a href="https://shopfries.herokuapp.com" target='_blank'><img src={Shoppy} alt="shopipy clone web app" className="workImg img-fluid" /></a>
                             <p className="p-common workListSummary"> A landing page clone of Shopify ecommerce website <i class="fa-solid fa-arrow-right-long"></i></p>
                         </li>
-                        <li className="workListItem">
+                        <li className="workListItem" data-aos="fade-left"
+                        data-aos-duration="1600">
                             <a href="https://iptrackr.herokuapp.com/" target='_blank'><img src='https://res.cloudinary.com/dz209s6jk/image/upload/q_auto:good,w_900/Challenges/p6khgutnfr78zbs9kje7.jpg' alt="ip tracker website" className="workImg img-fluid" /></a>
                             <p className="p-common workListSummary"> A simple api website to track ip address <i class="fa-solid fa-arrow-right-long"></i></p>
                         </li>
-                    {/* </div>
-                    <div className="workListFlex"> */}
-                        <li className="workListItem">
+                    
+                        <li className="workListItem" data-aos="fade-left"
+                        data-aos-duration="1700">
+                            <a href="https://movie-streaming-app-f4013.web.app/" target='_blank'><img src='https://mir-s3-cdn-cf.behance.net/projects/404/b9847a149683171.Y3JvcCwxMDM5LDgxMywxOTgsMA.png' alt="shopipy clone web app" className="workImg img-fluid" /></a>
+                            <p className="p-common workListSummary"> A movie web app designed for streaming and downloads<i class="fa-solid fa-arrow-right-long"></i></p>
+                        </li>
+                        {/* <li className="workListItem">
                             <a href="https://shopfries.herokuapp.com" target='_blank'><img src={Shoppy} alt="shopipy clone web app" className="workImg img-fluid" /></a>
                             <p className="p-common workListSummary"> A landing page clone of Shopify ecommerce website <i class="fa-solid fa-arrow-right-long"></i></p>
-                        </li>
-                        <li className="workListItem">
-                            <a href="https://shopfries.herokuapp.com" target='_blank'><img src={Shoppy} alt="shopipy clone web app" className="workImg img-fluid" /></a>
-                            <p className="p-common workListSummary"> A landing page clone of Shopify ecommerce website <i class="fa-solid fa-arrow-right-long"></i></p>
-                        </li>
-                    {/* </div> */}
+                        </li> */}
+                    
                     
                     
                     
