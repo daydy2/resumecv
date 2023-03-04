@@ -12,9 +12,9 @@ const Navbar = () => {
         <ul className="nav__ul-list">
           <li className="nav__li-listItem">Home</li>
           <li className="nav__li-listItem">
-            <a href="https://drive.google.com/file/d/1jxl5ICcsdv09oVzFnpxvhblZpt80QIE4/view?usp=sharing" target='_blank' rel="noreferrer" download> Resume</a>
+            
           </li>
-          <li className="nav__li-listItem">Contact</li>
+          <li className="nav__li-listItem"></li>
         </ul>
       </div>
 
