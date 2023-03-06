@@ -94,7 +94,8 @@ const IntroPage = () => {
             </div>
           </div>
           <a
-            href="https://drive.google.com/file/d/1jxl5ICcsdv09oVzFnpxvhblZpt80QIE4/view?usp=sharing"
+          
+            href="https://drive.google.com/file/d/1h5bFoDzcrCUVvOrQGoolg_uGM2_KTkFI/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="downloadrsm btn"
