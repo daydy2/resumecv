@@ -100,7 +100,7 @@ const IntroPage = () => {
             className="downloadrsm btn"
           >
             {" "}
-            <i class="fa-solid fa-download"></i> Download resume
+            <i class="fa-solid fa-download"></i> resume
           </a>
         </section>
         <section className="sectionSkills">
