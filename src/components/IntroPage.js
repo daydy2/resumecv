@@ -221,7 +221,7 @@ const IntroPage = () => {
               data-aos-duration="1500"
             >
               <a
-                href="https://shopfries.herokuapp.com"
+                href="https://yoddle-shopify-landing-page.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -243,7 +243,7 @@ const IntroPage = () => {
               data-aos-duration="1600"
             >
               <a
-                href="https://iptrackr.herokuapp.com/"
+                href="https://iptracker-self.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
