@@ -70,7 +70,7 @@ const IntroPage = () => {
               <p className="p-common p-overflow">
                 Ige Daniel Olumide is a {age} years old recent graduate 🎓 from
                 the department of Electrical and Electronics Engineering,
-                University of Lagos. A qualified frontend developer based in
+                University of Lagos. A qualified MERN developer based in
                 Lagos 💥, with self drivien passion in developing and
                 maintaining user interfaces. Capable of learning with and
                 without supervision and also ready to provide out of box
